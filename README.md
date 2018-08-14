@@ -1,1 +1,1 @@
-Available at http://taka.crabdance.com/
+Functional webapp available at http://taka.crabdance.com/
