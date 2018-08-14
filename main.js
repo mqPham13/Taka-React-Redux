@@ -1,22 +1,22 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App.jsx'
-import {combineReducers, createStore, applyMiddleware} from 'redux'
 import {Provider} from 'react-redux'
-import thunk from 'redux-thunk'
+import products from './reducers/productsReducer.jsx'
+import editedProduct from './reducers/editedProductReducer.jsx'
+import store from './store.js'
 
 
-var centralState = combineReducers({
-    
-})
-
-var store = createStore(centralState, applyMiddleware(thunk))
-
+//logging to console
+var logging = store => next => action => {
+    console.log(action.type)
+}
 
 ReactDOM.render(
-<Provider store={store}>    
-    <App />
-</Provider>    
-    , document.getElementById('app')
-
+	<div>
+		<Provider store={store}>    
+		    <App />
+		</Provider>    
+	</div>
+	    , document.getElementById('root')
 )

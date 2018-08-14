@@ -1,0 +1,114 @@
+scp contact.html root@178.128.217.106:/var/www/html
+
+
+Functional requirements:
+A student must use React/Redux to build a front-end with the following functionality:
+
+Allow to add/update/delete/view a list of products (id, name, price, description, brand, producer, image URL)
+
+Allow to add/update/delete/view a list of product categories (id, name)
+
+A product page displays all available products with product names, prices, images.
+
+A product detail page
+This page should support 2 views: grid (more than 1 product per line) and list (1 product per line)
+
+In the product page, on the left-hand side, it should allow users to filter product by category or by price (use a price range between x and y)
+
+Products should be listed by page. Use Javascript code for paging
+
+There should be also a search field. Use Javascript to search 
+
+In this assignment, Backend REST API will be provided to students.
+
+For products:
+
+Purpose
+
+Endpoint
+
+Method
+
+Get all products
+
+http://rmit.chickenkiller.com:8080/products
+
+GET
+
+Get one product by id
+
+http://rmit.chickenkiller.com:8080/products/id
+
+GET
+
+Add new product
+
+http://rmit.chickenkiller.com:8080/products
+
+POST
+
+Delete a product
+
+http://rmit.chickenkiller.com:8080/products/id
+
+DELETE
+
+Update a product
+
+http://rmit.chickenkiller.com:8080/products
+
+PUT
+
+
+Get all product by product type id
+/Users/apple/redux-template/reqs.txt
+http://rmit.chickenkiller.com:8080/products/byType/productTypeId
+
+GET
+
+-----------------------------------
+
+For product types:
+
+Purpose
+
+Endpoint
+
+Method
+
+Get all product type
+
+http://rmit.chickenkiller.com:8080/productTypes
+
+GET
+
+Get one product type by id
+
+http://rmit.chickenkiller.com:8080/productTypes/id
+
+GET
+
+Add new product type
+
+http://rmit.chickenkiller.com:8080/productTypes
+
+POST
+
+Delete a product type
+
+http://rmit.chickenkiller.com:8080/productTypes/id
+
+DELETE
+
+Update a product type
+
+http://rmit.chickenkiller.com::8080/productTypes
+
+PUT
+
+ 
+
+Non-functional requirements:
+All the user-inputs should be validated before submission
+Students should make and state their assumptions
+Students can get inspired by looking at workflows defined in Lazada or tiki.

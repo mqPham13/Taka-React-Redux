@@ -1,0 +1,21 @@
+.container{
+	margin-top: 80px;
+	margin-left: 10px;
+}
+
+.th1{
+	width: 10%;
+}
+
+.th2{
+	width: 25%;
+}
+
+.btn{
+	margin-bottom: 5px;
+}
+
+.btn-default{
+	margin-bottom: 20px;
+}
+
